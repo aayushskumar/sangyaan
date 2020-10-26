@@ -216,19 +216,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.country:
                 startActivity(new Intent(this, Countries.class));
                 break;
-
-            case R.id.share:
-                Intent intentShare = new Intent();
-                intentShare.setAction(Intent.ACTION_SEND);
-                intentShare.setType("text/plain");
-                String appUrl = " http://play.google.com/store/apps/details?id=com.covid19.sangyaan";
-                intentShare.putExtra(android.content.Intent.EXTRA_TEXT,appUrl);
-                startActivity(Intent.createChooser(intentShare,"Share via"));
-                break;
-
-            case R.id.rateUs:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + getApplicationContext().getPackageName())));
-                break;
         }
 
         return super.onOptionsItemSelected(item);
