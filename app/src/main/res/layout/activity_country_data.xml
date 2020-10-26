@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CountryData"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCountryDataActivity"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/surface"
+        app:titleTextColor="@color/onSurface"
+        android:elevation="8dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/onBackground" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarCountryDataActivity">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txtVwCountryData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/onBackground"
+            android:fontFamily="@font/molengo"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"
+            android:singleLine="false"
+            android:layout_marginBottom="10dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="@color/surface"
+            android:layout_toStartOf="@id/divider"
+            android:layout_below="@id/txtVwCountryData"
+            android:background="@color/surface">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/activeCasesTxtVw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/molengo"
+                    android:text="Active"
+                    android:textColor="@color/onSurface"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/onSurface"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:layout_below="@id/activeCasesTxtVw"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/divider"
+            android:layout_marginEnd="10dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="@color/surface"
+            android:layout_below="@id/txtVwCountryData"
+            android:background="@color/surface" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/deathCasesTxtVw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/molengo"
+                    android:text="Deaths"
+                    android:textColor="@color/onSurface"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/deaths"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/onSurface"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_below="@id/deathCasesTxtVw"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@id/divider"
+            android:backgroundTint="@color/surface"
+            android:layout_marginEnd="5dp"
+            app:cardElevation="8dp"
+            android:background="@color/surface">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/recoveredCasesTxtVw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/molengo"
+                    android:text="Recovered"
+                    android:textColor="@color/onSurface"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/recovered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/onSurface"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_below="@id/recoveredCasesTxtVw"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card2"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/surface"
+            android:layout_toEndOf="@id/divider"
+            android:layout_alignParentEnd="true"
+            app:cardElevation="8dp"
+            android:background="@color/surface" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/confirmedCasesTxtVw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/molengo"
+                    android:text="Confirmed"
+                    android:textColor="@color/onSurface"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/confirmed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/onSurface"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_below="@id/confirmedCasesTxtVw"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+
+</RelativeLayout>
