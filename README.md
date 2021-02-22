@@ -1,6 +1,6 @@
 # Sangyaan (Android App)
 
-## Table of contents
+# Table of contents
 * [General Info](#general-info)
 * [Technologies](#technologies)
 * [Requirements](#requirements)
@@ -18,3 +18,4 @@ Project is created with:
 * Internet Connection
 
 # Functionalities
+## Home Screen
