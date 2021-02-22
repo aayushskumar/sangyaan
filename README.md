@@ -23,5 +23,5 @@ To get global data.
 ![Home Screen](https://github.com/aayushskumar/sangyaan/blob/main/screenshot/Screenshot_2021-02-22-14-51-26-53.jpg)
 
 ### List of all countries:
-Each row displays name of country which can be clicked to get COVID-19 data of a particular country.
-![Home Screen](https://github.com/aayushskumar/sangyaan/blob/main/screenshot/Screenshot_2021-02-22-14-51-26-53.jpg)
+Each row displays name of country sorted alphabetically which can be clicked to get COVID-19 data of a particular country.
+![Home Screen](https://github.com/aayushskumar/sangyaan/blob/main/screenshot/Screenshot_2021-02-22-14-51-39-59.jpg)
