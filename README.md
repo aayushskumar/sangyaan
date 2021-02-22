@@ -18,5 +18,6 @@ Project is created with:
 * Internet Connection
 
 # Functionalities
-## Home Screen
+## Home Screen:
+To get global data
 ![Home Screen](https://github.com/aayushskumar/sangyaan/blob/main/screenshot/Screenshot_2021-02-22-14-51-26-53.jpg)
